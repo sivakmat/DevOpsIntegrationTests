@@ -1,0 +1,106 @@
+{
+  "id": "dc3d153c-4ade-4c27-ab11-9dd3908e7207",
+  "version": "2.0",
+  "name": "orellfuessli",
+  "url": "https://www.orellfuessli.ch/",
+  "tests": [{
+    "id": "73011ad5-7a7b-48e8-91ba-8ce259627a9e",
+    "name": "Buchsuche",
+    "commands": [{
+      "id": "8722032e-678b-4c3a-ab73-e2be67f15410",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.orellfuessli.ch/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3600876b-65d7-4239-98be-7fa13cd9345a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1720x1350",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c5043cc-3b24-40cc-9a89-a5f48bc34164",
+      "comment": "",
+      "command": "click",
+      "target": "name=sq",
+      "targets": [
+        ["name=sq", "name"],
+        ["css=.kundeneingabe", "css:finder"],
+        ["xpath=//input[@name='sq']", "xpath:attributes"],
+        ["xpath=//layout-fullsize[@id='top']/div/header-prime/div[3]/div[3]/header-prime-suche/suche-global/suche-suggest/form/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eac395d-0174-4e5b-8edd-28ed8fd8f19a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fb54aa4-e700-4950-aa45-8848fa58ea14",
+      "comment": "",
+      "command": "type",
+      "target": "name=sq",
+      "targets": [
+        ["name=sq", "name"],
+        ["css=.kundeneingabe", "css:finder"],
+        ["xpath=//input[@name='sq']", "xpath:attributes"],
+        ["xpath=//layout-fullsize[@id='top']/div/header-prime/div[3]/div[3]/header-prime-suche/suche-global/suche-suggest/form/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "978-3-96009-199-8"
+    }, {
+      "id": "3622aca1-9307-447c-9ab0-d73b0ea607d8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=sq",
+      "targets": [
+        ["name=sq", "name"],
+        ["css=.kundeneingabe", "css:finder"],
+        ["xpath=//input[@name='sq']", "xpath:attributes"],
+        ["xpath=//layout-fullsize[@id='top']/div/header-prime/div[3]/div[3]/header-prime-suche/suche-global/suche-suggest/form/div/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "634dc492-d8ec-4635-aed1-081c5adc1c97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.artikel > .element-link-toplevel",
+      "targets": [
+        ["css=.artikel > .element-link-toplevel", "css:finder"],
+        ["xpath=//a[contains(text(),'Zur Artikeldetailseite von Das DevOps-Handbuch des Autors Gene Kim')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/home/artikeldetails/A1063576029')]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zur Artikeldetailseite von Das DevOps-Handbuch des Autors Gene Kim')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aaab57a-3a80-45f3-8d7d-36c07962d6a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.titel",
+      "targets": [
+        ["css=.titel", "css:finder"],
+        ["xpath=//h1[@type='Titel']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Das DevOps-Handbuch')]", "xpath:innerText"]
+      ],
+      "value": "Das DevOps-Handbuch"
+    }]
+  }],
+  "suites": [{
+    "id": "ef2f37f6-172e-45dd-a7ea-cd11157f706b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["73011ad5-7a7b-48e8-91ba-8ce259627a9e"]
+  }],
+  "urls": ["https://www.orellfuessli.ch/"],
+  "plugins": []
+}

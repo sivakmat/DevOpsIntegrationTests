@@ -1,0 +1,71 @@
+{
+  "id": "3d731d20-28eb-497d-94a7-f24c3dcf10e4",
+  "version": "2.0",
+  "name": "Google Suche",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "6c41371c-0913-4229-bd81-bba0dc3c4e3e",
+    "name": "Person Suche",
+    "commands": [{
+      "id": "a519db9a-263c-46cf-bbd8-b4c99ddd4b5e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65e3699e-097a-4435-98ca-454a41d69d1d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1720x1350",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e699553a-bc41-4268-ab6c-c8dd2d3701be",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Steve Jobs"
+    }, {
+      "id": "18d2141d-708b-43a7-8e54-0488aa152c9e",
+      "comment": "",
+      "command": "click",
+      "target": "name=btnK",
+      "targets": [
+        ["name=btnK", "name"],
+        ["css=center:nth-child(2) > .gNO89b", "css:finder"],
+        ["xpath=//input[@name='btnK']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6bbe385-ddf4-45bc-88c3-884b6dca9b56",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ssJ7i",
+      "targets": [
+        ["css=.ssJ7i", "css:finder"],
+        ["xpath=//div[@id='rcnt']/div[2]/div/div/div[3]/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Steve Jobs"
+    }]
+  }],
+  "suites": [{
+    "id": "259019a3-ea30-49d2-97a8-d248fcb1c691",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6c41371c-0913-4229-bd81-bba0dc3c4e3e"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
